@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyTeam</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="scss/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -13,29 +13,26 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
+        <div class="header__wrapper container">
           <div class="header__left">
             <a href="index.html"><img class="logo header__logo" src="images/myteam.png" alt="logo" /></a>
             <nav class="header__nav">
-              <a class="header__nav-link " href="#">home</a>
-              <a class="header__nav-link active" href="about.html">about</a>
+              <a class="header__nav-link " href="index.html">home</a>
+              <a class="header__nav-link active" href="#">about</a>
             </nav>
           </div>
           <div class="header__right">
-            <a class="header__contact-btn btn btn-primary" href="contact.html"
+            <a class="header__contact-btn btn btn--primary" href="contact.html"
               >contact us</a
             >
             <button class="header__toggle"><i class="fas fa-bars"></i></button>
           </div>
         </div>
-      </div>
     </header>
 
     <!-- ABOUT HERO -->
     <section class="about-hero">
-      <div class="container">
-        <div class="about-hero__wrapper">
+        <div class="about-hero__wrapper container">
           <h1 class="about-hero__title heading--h1--sm">About</h1>
           <p class="about-hero__text text--body-1">
             We help companies build dynamic teams made up of top global talent.
@@ -44,7 +41,6 @@
             best products and experiences. We’ll bring those teams to you.
           </p>
         </div>
-      </div>
     </section>
 
     <!-- TEAM MEMBERS -->
@@ -97,21 +93,21 @@
       <div class="container">
         <h2 class="clients__title heading--h2">Some of our clients</h2>
         <div class="clients__grid">
-          <div class="client">
+          <a href="#" class="client">
             <img class="client__img" src="images/client4.png" alt="client logo" />
-          </div>
-          <div class="client">
+          </a>
+          <a href="#" class="client">
             <img class="client__img" src="images/client3.png" alt="client logo" />
-          </div>
-          <div class="client">
+          </a>
+          <a href="#" class="client">
             <img class="client__img" src="images/client5.png" alt="client logo" />
-          </div>
-          <div class="client">
+          </a>
+          <a href="#" class="client">
             <img class="client__img" src="images/client2.png" alt="client logo" />
-          </div>
-          <div class="client">
+          </a>
+          <a href="#" class="client">
             <img class="client__img" src="images/client1.png" alt="client logo" />
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -121,7 +117,7 @@
       <div class="container">
         <div class="cta__wrapper">
           <h2 class="cta__title heading--h2">Ready to get started?</h2>
-          <a href="contact.html" class="cta__btn btn btn-primary-dark">contact us</a>
+          <a href="contact.html" class="cta__btn btn btn--primary-dark">contact us</a>
         </div>
       </div>
     </section>

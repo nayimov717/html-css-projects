@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 
 :root {
   --color-midnight-green: #014e56;
@@ -11,13 +11,13 @@
   --color-dark-green: #002529;
 
   --font-family: "Livvic", sans-serif;
-}
+} */
 
 /* ===================== */
 /* GLOBAL    */
 /* ===================== */
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,9 +25,9 @@
 
 html {
   scroll-behavior: smooth;
-}
+} */
 
-body {
+/* body {
   font-family: var(--font-family);
   color: var(--color-sacramento-state-green);
 }
@@ -39,9 +39,9 @@ h3,
 p {
   margin: 0;
   padding: 0;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   color: var(--color-white);
   transition: color 0.2s ease-in-out;
@@ -51,14 +51,14 @@ a:hover {
 }
 a.active {
   color: var(--color-light-coral);
-}
+} */
 
-ul,
+/* ul,
 ol {
   list-style: none;
-}
+} */
 
-button {
+/* button {
   cursor: pointer;
 }
 
@@ -66,11 +66,11 @@ button {
   max-width: 1110px;
   margin: 0 auto;
   height: 100%;
-}
+} */
 
 /* DESIGN SYSTEM */
 /* typography */
-.heading--h1--lg {
+/* .heading--h1--lg {
   font-size: 100px;
   line-height: 100px;
   font-weight: 700;
@@ -99,10 +99,10 @@ button {
   font-size: 15px;
   line-height: 25px;
   font-weight: 600;
-}
+} */
 
 /* buttons ----------- */
-.btn {
+/* .btn {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -148,11 +148,11 @@ button {
 }
 .btn-secondary:hover {
   background-color: var(--color-rapture-blue);
-}
+} */
 
 /* -------------------------- HOME -------------------------- */
 /* HEADER */
-.header {
+/* .header {
   background-color: var(--color-midnight-green);
   padding: 0 20px;
   margin-bottom: -5px;
@@ -196,10 +196,10 @@ button {
   color: var(--color-white);
   font-size: 24px;
   cursor: pointer;
-}
+} */
 
 /* HERO */
-.hero {
+/* .hero {
   background-color: var(--color-midnight-green);
   background-image: url("./images/shape1.svg");
   background-repeat: no-repeat;
@@ -237,10 +237,10 @@ button {
   position: absolute;
   top: -90px;
   left: 0;
-}
+} */
 
 /* FEATURES */
-.features {
+/* .features {
   background-color: var(--color-sacramento-state-green);
   padding: 100px 0;
   position: relative;
@@ -286,10 +286,10 @@ button {
 }
 .feature__text {
   color: var(--color-white);
-}
+} */
 
 /* TESTIMONIALS */
-.testimonials {
+/* .testimonials {
   background-color: var(--color-deep-jungle-green);
   padding: 100px 0;
   background-image: url(images/shape3.svg), url(images/shape4.svg);
@@ -335,10 +335,10 @@ button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-}
+} */
 
 /* CTA */
-.cta {
+/* .cta {
   background-color: var(--color-light-coral);
   overflow: hidden;
   background-image: url(images/shape6.svg);
@@ -350,10 +350,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 /* FOOTER */
-.footer {
+/* .footer {
   background-color: var(--color-dark-green);
   padding: 50px 20px;
 }
@@ -409,10 +409,10 @@ button {
 .footer__copyright {
   color: #ffffff9d;
   font-size: 14px;
-}
+} */
 
 /* --------------------- ABOUT --------------------- */
-.about-hero {
+/* .about-hero {
   background-color: var(--color-midnight-green);
   padding: 100px 20px;
   background-image: url(images/shape7.svg);  
@@ -440,10 +440,10 @@ button {
   height: 4px;
   background-color: var(--color-light-coral);
   margin-bottom: 40px;
-}
+} */
 
 /* TEAM */
-.team {
+/* .team {
   background-color: var(--color-deep-jungle-green);
   padding: 100px 20px;
   background-image: url(images/shape8.svg), url(images/shape9.svg);
@@ -501,10 +501,10 @@ button {
 }
 .team__card-btn:hover {
   background-color: var(--color-rapture-blue);
-}
+} */
 
 /* CLIENTS */
-.clients {
+/* .clients {
   background-color: var(--color-sacramento-state-green);
   padding: 100px 20px;
   background-image: url(images/shape10.svg);
@@ -526,11 +526,11 @@ button {
   height: 25px;
   transition: transform 0.3s ease-in-out;
   filter: brightness(0) invert(1);
-}
+} */
 
 /* ----------------------- CONTACT --------------------- */
 /* CONTACT FORM */
-.contact {
+/* .contact {
   background-color: var(--color-midnight-green);
   padding: 100px 20px;
   background-image: url(images/shape8.svg);
@@ -589,147 +589,10 @@ input::placeholder,
 textarea::placeholder {
   color: #ffffff70;
   font-family: var(--font-family);
-}
+} */
 
 /* =============== TABLET ============== */
 @media (max-width: 992px) {
-  /* DESIGN SYSTEM */
-  /* typography */
-  .heading--h1--lg {
-    font-size: 64px;
-    font-weight: bold;
-    line-height: 56px;
-  }
-  .heading--h1--sm {
-    font-size: 64px;
-    font-weight: bold;
-    line-height: 56px;
-  }
-  .heading--h2 {
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 32px;
-  }
-  .heading--h3 {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 28px;
-  }
-  .text--body-1 {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-  .text--body-2 {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-
-  /* ------------ HOME -------------- */
-  /* HEADER */
-  .header__nav {
-    display: flex;
-  }
-  .header__nav-link {
-    display: inline-block;
-  }
-  .header__toggle {
-    display: none;
-  }
-
-  /* HERO */
-  .hero {
-    background-image: none;
-  }
-  .hero__wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-position: center bottom;
-  }
-  .hero__text {
-    width: 450px;
-  }
-  .hero__text::before {
-    display: none;
-  }
-
-  /* FEATURES */
-  .features {
-    background-position: right top;
-  }
-  .features__wrapper {
-    flex-direction: column;
-    padding: 0 50px;
-  }
-  .features__left {
-    width: 445px;
-  }
-
-  /* TESTIMONIALS */
-  .testimonials {
-    padding: 100px 50px;
-  }
-  .testimonials__title {
-    margin-bottom: 50px;
-  }
-  .testimonials__cards {
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .testimonials__card {
-    width: 100%;
-  }
-
-  /* CTA  */
-  .cta__wrapper {
-    padding: 60px 70px;
-  }
-
-  /* FOOTER */
-
-  .footer__wrapper {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .footer__right {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  /* --------------------- ABOUT --------------------- */
-  .about-hero {
-    padding: 80px 50px;
-    text-align: center;
-  }
-  .about-hero__wrapper {
-    flex-direction: column;
-  }
-  .about-hero__text {
-    width: 450px;
-  }
-  .about-hero__text::before {
-    display: none;
-  }
-
-  /* TEAM */
-  .team {
-    padding: 80px 50px;
-  }
-
-  /* CLIENTS */
-  .clients {
-    padding: 80px 50px;
-    background-position: -100px -100px;
-  }
-  .clients__grid {
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .client__img {
-    height: 20px;
-  }
 
   /* ----------------------- CONTACT --------------------- */
   /* CONTACT FORM */
@@ -758,117 +621,6 @@ textarea::placeholder {
 
 /* ========================= MOBILE ====================== */
 @media (max-width: 580px) {
-  /* DESIGN SYSTEM */
-  /* typography */
-  .heading--h1--lg {
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 40px;
-  }
-  .heading--h1--sm {
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 40px;
-  }
-
-  /* ------------ HOME -------------- */
-  /* HEADER */
-  .header__nav {
-    display: none;
-  }
-  .header__contact-btn {
-    display: none;
-  }
-  .header__toggle {
-    display: inline-block;
-  }
-
-  /* HERO */
-  .hero p {
-    width: 300px;
-  }
-
-  /* FEATURES */
-  .features__wrapper {
-    padding: 0 20px;
-  }
-  .features__left {
-    width: 240px;
-  }
-  .features__right {
-    width: 100%;
-    margin-top: 30px;
-    gap: 50px;
-  }
-  .feature {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  /* TESTIMONIALS */
-  .testimonials {
-    padding: 100px 20px;
-  }
-
-  /* CTA */
-  .cta {
-    background-position: left 140px;
-  }
-  .cta__wrapper {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  /* FOOTER */
-
-  .footer__left {
-    gap: 50px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer__left-top {
-    align-items: center;
-  }
-  .footer__nav-list {
-    justify-content: center;
-    margin-top: 25px;
-  }
-  .footer__right {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  /* --------------------- ABOUT --------------------- */
-  .about-hero {
-    padding: 120px 20px;
-    background-position: right 350px;
-  }
-  .about-hero__text {
-    width: 100%;
-  }
-
-  /* TEAM */
-  .team {
-    padding: 80px 20px;
-    background-position: -30px -80px, right bottom ;
-  }
-
-  /* CLIENTS */
-  .clients {
-    padding: 80px 20px;
-    overflow: hidden;
-    background-position: -100px -100px;
-  }
-  .clients__grid {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-  }
-
   /* ----------------------- CONTACT --------------------- */
   /* CONTACT FORM */
   .contact {
