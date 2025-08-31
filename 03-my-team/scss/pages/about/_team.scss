@@ -12,7 +12,7 @@
   }
   @include mobile {
     padding: 80px 20px;
-    background-position: -30px -80px, right bottom ;
+    background-position: -30px -80px, right bottom;
   }
 
   &__title {
@@ -33,6 +33,10 @@
     padding: 30px;
     text-align: center;
     position: relative;
+    transition: all 0.5s ease;
+    &.active {
+      transform: rotateY(180deg);
+    }
 
     &-img {
       width: 96px;
@@ -40,10 +44,16 @@
       border-radius: 50%;
       margin: 0 auto 20px;
     }
+    &.active &-img {
+      display: none;
+    }
 
     &-title {
       color: var(--color-rapture-blue);
       margin-bottom: 10px;
+    }
+    &.active &-title {
+      transform: rotateY(180deg);
     }
 
     &-text {
@@ -52,7 +62,11 @@
       margin-bottom: 20px;
       font-style: italic;
     }
+    &.active &-text {
+      display: none;
+    }
 
+    
     &-btn {
       background-color: var(--color-light-coral);
       color: var(--color-white);
@@ -61,16 +75,53 @@
       border-radius: 30px;
       font-size: 15px;
       cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
+      transition: 0.3s all ease;
       position: absolute;
       bottom: -28px;
       left: 50%;
       transform: translateX(-50%);
       width: 56px;
       height: 56px;
-
+      
       &:hover {
         background-color: var(--color-rapture-blue);
+      }
+    }
+    &-btn i {
+      transition: 0.3s all ease;
+    }
+    &.active &-btn i {
+      transition: 0.3s all ease;
+      transform: rotate(45deg) ;
+    }
+
+    &-info {
+      display: none;
+    }
+    &.active &-info {
+      display: block;
+      margin-top: 20px;
+      transform: rotateY(180deg);
+    }
+
+    &-info-text {
+      color: var(--color-white);
+      margin-bottom: 20px;
+    }
+
+    &-socials {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      &-link {
+        color: var(--color-white);
+        font-size: 20px;
+        transition: color var(--transition-duration);
+
+        &:hover {
+          color: var(--color-light-coral);
+        }
       }
     }
   }

@@ -1,19 +1,12 @@
-// Offcanvas menu toggle
-// const toggleButton = document.querySelector('.header__toggle');
-// const offcanvasMenu = document.querySelector('.offcanvas');
+// ================ Offcanvas menu =================
 
-// toggleButton.addEventListener('click', () => {
-//   offcanvasMenu.classList.toggle('open');
-// });
-
-
-const burger = document.querySelector(".header__toggle");
+const header__toggle = document.querySelector(".header__toggle");
 const offcanvas = document.querySelector(".offcanvas");
 const closeBtn = document.querySelector(".offcanvas__close");
 const overlay = document.querySelector(".overlay");
 
 // Offcanvas ochish
-burger.addEventListener("click", () => {
+header__toggle.addEventListener("click", () => {
   offcanvas.classList.add("active");
   overlay.classList.add("active");
 });
@@ -27,3 +20,14 @@ function closeOffcanvas() {
 closeBtn.addEventListener("click", closeOffcanvas);
 overlay.addEventListener("click", closeOffcanvas);
 
+
+// ===================== Team card =====================
+
+const buttons = document.querySelectorAll(".team__card-btn");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const card = btn.parentElement;
+    card.classList.toggle("active");
+  });
+});

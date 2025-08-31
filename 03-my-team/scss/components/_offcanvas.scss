@@ -10,7 +10,7 @@
   right: -100%; // boshlanishida yashirin
   width: 280px;
   height: 100vh;
-  padding: 60px;
+  padding: 80px 60px;
   transition: right 0.3s ease-in-out;
   z-index: 1000;
 
@@ -28,8 +28,13 @@
         font-size: 18px;
         text-decoration: none;
         font-weight: 600;
+        text-transform: lowercase;
 
         &:hover {
+          color: var(--color-light-coral);
+        }
+
+        &.active {
           color: var(--color-light-coral);
         }
       }
@@ -42,11 +47,13 @@
 
   .offcanvas__close {
     position: absolute;
-    top: 20px;
+    top: 55px;
     right: 20px;
-    font-size: 40px;
+    font-size: 24px;
     color: white;
     cursor: pointer;
+    background: none;
+    border: none;
   }
 }
 

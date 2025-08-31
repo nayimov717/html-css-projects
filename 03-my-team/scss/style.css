@@ -1,4 +1,60 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --color-midnight-green: #014e56;
   --color-light-coral: #f67e7e;
@@ -8,66 +64,10 @@
   --color-deep-jungle-green: #004047;
   --color-sacramento-state-green: #012f34;
   --color-dark-green: #002529;
-  --font-family: "Livvic", sans-serif;
+  --font-family: "Livvic";
   --transition-duration: 0.2s;
 }
 
-@font-face {
-  font-family: "Livvic";
-  src: url("../../fonts/Livvic-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Livvic";
-  src: url("../../fonts/Livvic-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Livvic";
-  src: url("../../fonts/Livvic-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Livvic";
-  src: url("../../fonts/Livvic-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Livvic";
-  src: url("../../fonts/Livvic-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Livvic";
-  src: url("../../fonts/Livvic-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Livvic";
-  src: url("../../fonts/Livvic-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Livvic";
-  src: url("../../fonts/Livvic-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -413,7 +413,7 @@ button {
   right: -100%;
   width: 280px;
   height: 100vh;
-  padding: 60px;
+  padding: 80px 60px;
   transition: right 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -431,8 +431,12 @@ button {
   font-size: 18px;
   text-decoration: none;
   font-weight: 600;
+  text-transform: lowercase;
 }
 .offcanvas ul li a:hover {
+  color: var(--color-light-coral);
+}
+.offcanvas ul li a.active {
   color: var(--color-light-coral);
 }
 .offcanvas.active {
@@ -440,11 +444,13 @@ button {
 }
 .offcanvas .offcanvas__close {
   position: absolute;
-  top: 20px;
+  top: 55px;
   right: 20px;
-  font-size: 40px;
+  font-size: 24px;
   color: white;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .overlay {
@@ -964,6 +970,10 @@ button {
   padding: 30px;
   text-align: center;
   position: relative;
+  transition: all 0.5s ease;
+}
+.team__card.active {
+  transform: rotateY(180deg);
 }
 .team__card-img {
   width: 96px;
@@ -971,15 +981,24 @@ button {
   border-radius: 50%;
   margin: 0 auto 20px;
 }
+.team__card.active .team__card-img {
+  display: none;
+}
 .team__card-title {
   color: var(--color-rapture-blue);
   margin-bottom: 10px;
+}
+.team__card.active .team__card-title {
+  transform: rotateY(180deg);
 }
 .team__card-text {
   color: var(--color-white);
   font-size: 15px;
   margin-bottom: 20px;
   font-style: italic;
+}
+.team__card.active .team__card-text {
+  display: none;
 }
 .team__card-btn {
   background-color: var(--color-light-coral);
@@ -989,7 +1008,7 @@ button {
   border-radius: 30px;
   font-size: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: 0.3s all ease;
   position: absolute;
   bottom: -28px;
   left: 50%;
@@ -999,6 +1018,38 @@ button {
 }
 .team__card-btn:hover {
   background-color: var(--color-rapture-blue);
+}
+.team__card-btn i {
+  transition: 0.3s all ease;
+}
+.team__card.active .team__card-btn i {
+  transition: 0.3s all ease;
+  transform: rotate(45deg);
+}
+.team__card-info {
+  display: none;
+}
+.team__card.active .team__card-info {
+  display: block;
+  margin-top: 20px;
+  transform: rotateY(180deg);
+}
+.team__card-info-text {
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+.team__card-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.team__card-socials-link {
+  color: var(--color-white);
+  font-size: 20px;
+  transition: color var(--transition-duration);
+}
+.team__card-socials-link:hover {
+  color: var(--color-light-coral);
 }
 
 .clients {
