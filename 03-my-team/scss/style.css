@@ -404,6 +404,10 @@ button {
 }
 
 .offcanvas {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
   background: var(--color-police-blue);
   background-image: url(../images/shape7.svg);
   background-repeat: no-repeat;
@@ -413,44 +417,44 @@ button {
   right: -100%;
   width: 280px;
   height: 100vh;
-  padding: 80px 60px;
+  padding: 55px 25px 25px 50px;
   transition: right 0.3s ease-in-out;
   z-index: 1000;
-}
-.offcanvas ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-top: 50px;
-}
-.offcanvas ul li {
-  margin-bottom: 30px;
-}
-.offcanvas ul li a {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: lowercase;
-}
-.offcanvas ul li a:hover {
-  color: var(--color-light-coral);
-}
-.offcanvas ul li a.active {
-  color: var(--color-light-coral);
 }
 .offcanvas.active {
   right: 0;
 }
 .offcanvas .offcanvas__close {
-  position: absolute;
-  top: 55px;
-  right: 20px;
+  align-self: end;
   font-size: 24px;
   color: white;
   cursor: pointer;
-  background: none;
+  background: transparent;
   border: none;
+  padding: 0;
+}
+.offcanvas__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.offcanvas__list-item {
+  margin-bottom: 30px;
+}
+.offcanvas__list-item a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: lowercase;
+  width: 100%;
+  display: block;
+}
+.offcanvas__list-item a:hover {
+  color: var(--color-light-coral);
+}
+.offcanvas__list-item a.active {
+  color: var(--color-light-coral);
 }
 
 .overlay {
@@ -972,9 +976,6 @@ button {
   position: relative;
   transition: all 0.5s ease;
 }
-.team__card.active {
-  transform: rotateY(180deg);
-}
 .team__card-img {
   width: 96px;
   height: 96px;
@@ -987,9 +988,6 @@ button {
 .team__card-title {
   color: var(--color-rapture-blue);
   margin-bottom: 10px;
-}
-.team__card.active .team__card-title {
-  transform: rotateY(180deg);
 }
 .team__card-text {
   color: var(--color-white);
@@ -1009,12 +1007,13 @@ button {
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s all ease;
-  position: absolute;
-  bottom: -28px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 56px;
   height: 56px;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .team__card-btn:hover {
   background-color: var(--color-rapture-blue);
@@ -1028,11 +1027,10 @@ button {
 }
 .team__card-info {
   display: none;
+  margin-top: 20px;
 }
 .team__card.active .team__card-info {
   display: block;
-  margin-top: 20px;
-  transform: rotateY(180deg);
 }
 .team__card-info-text {
   color: var(--color-white);

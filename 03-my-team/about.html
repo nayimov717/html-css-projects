@@ -13,15 +13,16 @@
   <body>
     <!-- Off-canvas menu -->
     <nav class="offcanvas">
-      <span class="offcanvas__close">&times;</span>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html" class="btn btn--primary">Contact</a></li>
+      <button class="offcanvas__close"><i class="fas fa-close"></i></button>
+      <ul class="offcanvas__list">
+        <li class="offcanvas__list-item"><a href="index.html" >Home</a></li>
+        <li class="offcanvas__list-item"><a href="about.html" class="active">About</a></li>
+        <li class="offcanvas__list-item"><a href="contact.html" class="btn btn--primary">Contact</a></li>
       </ul>
     </nav>
     <!-- Overlay (qoraroq fon) -->
     <div class="overlay"></div>
+
     <!-- HEADER -->
     <header class="header">
       <div class="header__wrapper container">
@@ -165,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="team__card active">
+          <div class="team__card">
             <img
               class="team__card-img"
               src="images/person1.png"

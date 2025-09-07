@@ -13,22 +13,23 @@
   <body>
     <!-- Off-canvas menu -->
     <nav class="offcanvas">
-      <span class="offcanvas__close">&times;</span>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="btn btn--primary">Contact</a></li>
+      <button class="offcanvas__close"><i class="fas fa-close"></i></button>
+      <ul class="offcanvas__list">
+        <li class="offcanvas__list-item"><a href="index.html" >Home</a></li>
+        <li class="offcanvas__list-item"><a href="about.html" >About</a></li>
+        <li class="offcanvas__list-item"><a href="contact.html" class="btn btn--primary">Contact</a></li>
       </ul>
     </nav>
     <!-- Overlay (qoraroq fon) -->
     <div class="overlay"></div>
+
     <!-- HEADER -->
     <header class="header">
         <div class="header__wrapper container">
           <div class="header__left">
             <a href="index.html"><img class="logo header__logo" src="images/myteam.png" alt="logo" /></a>
             <nav class="header__nav">
-              <a class="header__nav-link" href="#">home</a>
+              <a class="header__nav-link" href="index.html">home</a>
               <a class="header__nav-link" href="about.html">about</a>
             </nav>
           </div>
